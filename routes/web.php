@@ -18,11 +18,13 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function(){
-    return view ('home');
+    return view ('home', [
+        "title" => "Home"]);
 });
 
 Route::get('/about', function(){
     return view ('about',[
+        "title" => "about",
         "nama" => "Danendra Farrel Adriansyah",
         "email" => "Adriansyahdanendra@gmail.com",
         "gambar" => "superleggera.jpg"
@@ -30,5 +32,7 @@ Route::get('/about', function(){
 });
 
 Route::get('/gallery', function(){
-    return view ('gallery');
+    return view ('gallery', [
+        "title" => "Gallery"
+    ]);
 });
