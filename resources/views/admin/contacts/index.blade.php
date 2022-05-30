@@ -2,7 +2,7 @@
 @section('title','DanendF | Data Contacts')
 @section('content')
 <div class="main-content">
-                <div class="section__content section__content--p30">
+                <div class="section_content section_content--p30">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
@@ -32,7 +32,7 @@
                                                     <td>{{$index + 1}}</td>
                                                     <td>{{$contact->nama}}</td>
                                                     <td>{{$contact->email}}</td>
-                                                    <td>{{$contact->pesan}}</td>
+                                                    <td>{{$contact->Pesan}}</td>
                                                     <td>
                                                         <a href="{{route('contacts.edit', $contact->id)}}"><i class="fas fa-edit"></i></a>
                                                         |
